@@ -1,169 +1,101 @@
-# Awesome-Media-Downloader
+# Awesome Media Downloader [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Media Downloader Ecosystem
+> A curated directory of the best **Media Downloaders**, **Video Extractors**, **Download Accelerators**, and **Self-Hosted Archiving Tools**. Discover leading commercial SaaS platforms and high-performance open-source repositories for batch downloading YouTube, TikTok, Instagram, Twitter/X, and web media.
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Video/Audio Extraction, Batch Downloading & Self-Hosted Media Archiving*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Media Downloaders**. These tools enable users to save video, audio, and image content from the web for offline access, archiving, and dataset creation—ranging from general-purpose download managers that accelerate HTTP transfers to specialized extractors that parse streaming sites and social media platforms.
-
-
-
-**Examples** include Internet Download Manager, Free Download Manager, JDownloader, XDM, yt-dlp, youtube-dl, gallery-dl, and Cobalt (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-download SaaS fees, and controlling the extraction pipeline. The open-source landscape is anchored by **yt-dlp** (the actively maintained youtube-dl fork with 179k+ stars and support for thousands of sites), **gallery-dl** (the image gallery specialist with 18.9k stars), and **youtube-dl** (the original with 141k stars, though development has slowed), with **Cobalt** providing a modern web-based alternative and **aria2** serving as the multi-protocol download engine.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-| Product | Description | Pricing | Free Tier Limit |
-
-| :--- | :--- | :--- | :--- |
-
-| **[Internet Download Manager (IDM)](https://www.internetdownloadmanager.com/)** | Windows-only download accelerator with dynamic file segmentation and browser integration. | **$24.95** lifetime license (limited-time offer, normally $29.95); **$11.95** one-year license (normally $14.95) . | **30-day free trial** with full functionality. No permanent free tier. |
-
-| **[Free Download Manager (FDM)](https://www.freedownloadmanager.org/)** | Cross-platform download manager supporting HTTP/HTTPS/FTP/BitTorrent and video downloading. | **Free** (the core application is free to download and use) . | **Fully free** with no feature restrictions for the core download manager. |
-
-| **[JDownloader](https://jdownloader.org/)** | Java-based download manager for one-click hosting sites with captcha solving and archive extraction. | **Free** (the application is free; optional premium accounts for hosters are separate). | **Fully free** with no built-in limits on downloads or speed. |
-
-| **[Ninja Download Manager](https://ninjadownloadmanager.com/)** | Windows/macOS download accelerator with browser integration. | Free version available; **paid license required for full functionality** . | **Free version** available with limited features; full features require purchase. |
-
-| **[FlashGet](https://www.flashget.com/)** | Legacy download manager with multi-segment downloading. | **Free** (the classic FlashGet download manager is freeware). | **Fully free**. |
-
-| **[Folx](https://www.mac-downloader.com/)** | macOS-native download manager with browser integration via Safari extension. | **$19.95** for single Mac Personal License; **$39.95** for Family Pack (3 Macs) . | **Free version** available with limited speed and features; Pro license unlocks full speed and features. |
-
-| **[XDM (Xtreme Download Manager)](https://github.com/subhra74/xdm)** | Open-source download accelerator with browser integration. | **Free** (open-source). | **Fully free** with no limits. |
-
-| **[DownThemAll!](https://www.downthemall.net/)** | Browser extension for batch downloading links and media from pages. | **Free** (open-source). | **Fully free**. |
-
-| **[BitComet](https://www.bitcomet.com/)** | BitTorrent and HTTP/FTP download client. | **Free** (the core client is freeware). | **Fully free**. |
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** [![GitHub Stars](https://img.shields.io/github/stars/yt-dlp/yt-dlp?style=social&color=white)](https://github.com/yt-dlp/yt-dlp/stargazers)  
-
-  **The actively maintained youtube-dl fork and the de facto standard for video extraction.** ~179k–193k stars . Supports **thousands of sites** including YouTube, TikTok, Twitter/X, Instagram, and more. **Key features**: format selection, subtitle download, metadata embedding, playlist support, sponsorblock integration, and post-processing hooks. **Actively developed** with frequent releases (latest 2026.8.19) . **Use cases**: AI dataset creation, media archiving, and offline viewing. Best for any workflow requiring reliable extraction from streaming and social media platforms.
-
-
-
-- **[youtube-dl](https://github.com/ytdl-org/youtube-dl)** [![GitHub Stars](https://img.shields.io/github/stars/ytdl-org/youtube-dl?style=social&color=white)](https://github.com/ytdl-org/youtube-dl/stargazers)  
-
-  **The original video downloader.** ~141k stars . The project that started the category, but **development has slowed significantly**—yt-dlp was forked specifically to address maintenance gaps. Still functional for many sites but increasingly falls behind on new extractors. Best for legacy workflows already using it; new projects should use yt-dlp instead.
-
-
-
-- **[gallery-dl](https://github.com/mikf/gallery-dl)** [![GitHub Stars](https://img.shields.io/github/stars/mikf/gallery-dl?style=social&color=white)](https://github.com/mikf/gallery-dl/stargazers)  
-
-  **The image gallery and collection specialist.** ~18.9k stars . Command-line program for downloading image galleries and collections from image hosting sites (Danbooru, Pixiv, DeviantArt, Reddit, and many more). **Strengths**: handles pagination, authentication, and site-specific extraction logic that general-purpose downloaders miss. Best for archiving image collections and art from supported platforms.
-
-
-
-- **[you-get](https://github.com/soimort/you-get)** [![GitHub Stars](https://img.shields.io/github/stars/soimort/you-get?style=social&color=white)](https://github.com/soimort/you-get/stargazers)  
-
-  **The lightweight Python alternative.** ~57k stars . Command-line media downloader supporting YouTube, Youku, Bilibili, and other Chinese and international video sites. **Strengths**: simple CLI, minimal dependencies. **Trade-offs**: smaller site coverage than yt-dlp; less active development. Best for users wanting a lightweight option for major video platforms.
-
-
-
-- **[Cobalt](https://github.com/imputnet/cobalt)** [![GitHub Stars](https://img.shields.io/github/stars/imputnet/cobalt?style=social&color=white)](https://github.com/imputnet/cobalt/stargazers)  
-
-  **The modern web-based downloader.** ~36k stars . Saves what you love from the internet—videos, audio, and more—via a clean web interface. **Strengths**: no installation required, privacy-focused, supports popular social platforms. **Trade-offs**: web-based, so self-hosting requires deployment; API rate limits may apply. Best for users wanting a simple, browser-accessible downloader.
-
-
-
-- **[aria2](https://github.com/aria2/aria2)** [![GitHub Stars](https://img.shields.io/github/stars/aria2/aria2?style=social&color=white)](https://github.com/aria2/aria2/stargazers)  
-
-  **The multi-protocol download engine.** ~40k stars . Lightweight command-line utility supporting HTTP/HTTPS, FTP, SFTP, BitTorrent, and Metalink. **Strengths**: multi-connection downloads, JSON-RPC/XML-RPC interfaces, and the backend for countless GUI frontends (Persepolis, Motrix). **Not a media extractor**—it accelerates direct file downloads, not streaming site parsing. Best as the download engine underlying a media workflow, paired with yt-dlp for extraction.
-
-
-
-- **[XDM (Xtreme Download Manager)](https://github.com/subhra74/xdm)** [![GitHub Stars](https://img.shields.io/github/stars/subhra74/xdm?style=social&color=white)](https://github.com/subhra74/xdm/stargazers)  
-
-  **The open-source IDM alternative.** Download accelerator with browser integration for Chrome, Firefox, Edge, and Brave. Supports HTTP/HTTPS/FTP, video downloading, and resume. Best for Windows/Linux users wanting IDM-like acceleration without a commercial license.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **lux (video downloader)** — Go-based video downloader with CLI and library support. Best for developers wanting a fast, dependency-light extractor for major platforms (note: the `nvim-neorocks/lux` result is a different project—a Lua package manager) .
-
-- **annie (now lux)** — The predecessor to lux, a fast video downloader written in Go. Best for users wanting a simple CLI alternative to yt-dlp.
-
-- **Persepolis** — GUI download manager built on aria2 for Linux, Windows, and macOS. Best for users wanting aria2's engine with a graphical interface.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- **Downloading copyrighted content without permission may violate laws and platform terms of service**. These tools are presented for legitimate use cases: archiving your own content, downloading public domain/CC-licensed media, and creating datasets with proper authorization.
-
-- **yt-dlp is the recommended choice over youtube-dl**: youtube-dl development has slowed significantly, and yt-dlp was created to address maintenance gaps with active extractor updates .
-
-- **Free tiers are limited**: IDM offers a 30-day trial only; Ninja Download Manager's free version is feature-limited; Folx's free version restricts speed and features. Verify before committing.
-
-- **Site support changes frequently**: extractors break when platforms change their APIs or add anti-bot measures. Tools with active maintenance (yt-dlp, gallery-dl) handle these changes faster than less-maintained alternatives.
-
-
+Focused on fast video/audio extraction, multi-threaded batch downloading, streaming protocol parsing, and self-hosted media archiving.
 
 ---
 
+## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Commercial Platforms](#saas--commercial-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [Feature Comparison Matrix](#feature-comparison-matrix)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
 
-**Made for developers, archivists, and users who need reliable media extraction and archiving tools.**  
+---
 
-Let's make media downloading more open, actively maintained, and appropriately scoped.
+## Sector Overview & Market Dynamics
+
+The global download software market is valued at approximately **$45B – $48.3B** (with the dedicated online video downloader niche estimated at **~$2.1B** growing at **6.3% CAGR** toward $4B by 2035). The sector is **moderately fragmented**: consumer desktop and browser-based web extractors remain long-tail and competitive, while backend command-line extraction has consolidated into a near "winner-take-most" dynamic anchored heavily by open-source community standards like `yt-dlp`.
+
+---
+
+## SaaS & Commercial Platforms
+
+A breakdown of leading commercial download software and media extractors. Sorted in descending order by estimated company size (annual revenue/valuation).
+
+| Product | Description | Est. Revenue / Company Size | Pricing | Free Tier Limit |
+| :--- | :--- | :--- | :--- | :--- |
+| **[BitComet](https://www.bitcomet.com/)** | High-performance multi-protocol BitTorrent, HTTP, and FTP download client developed by Comet Media Inc. | **~$10M – $20M** est. annual revenue | **$19.95** lifetime VIP license; optional $1.95/month VIP pass | **Free forever plan** with standard download speeds and non-intrusive banner ads (VIP unlocks ad-free and cloud acceleration) |
+| **[Internet Download Manager (IDM)](https://www.internetdownloadmanager.com/)** | Industry-standard Windows download accelerator by Tonec Inc. with dynamic file segmentation and deep browser integration. | **~$10M** est. annual revenue (Tonec Inc.) | **$11.95** 1-year license (1 PC); **$24.95** lifetime license (1 PC) | **30-day free trial** with full access to all acceleration and scheduling features (no permanent free plan) |
+| **[4K Video Downloader+](https://www.4kdownload.com/)** | Cross-platform video & audio extractor by Open Media LLC supporting 4K/8K YouTube, TikTok, Vimeo, and playlists. | **~$5M – $10M** est. annual revenue (Open Media LLC) | **$15.00/year** Lite license; **$25.00** one-time Personal lifetime license | **Free forever plan** limited to **10 single video downloads/day**, 10 items per playlist, and 2 concurrent downloads |
+| **[Folx](https://mac-downloader.com/)** | Native macOS download manager & torrent client by Electronic Team, Inc. featuring multi-threading and Safari integration. | **~$3M – $5M** est. annual revenue (Electronic Team, Inc.) | **$19.95** PRO single license; **$39.95** Family pack (up to 3 Macs) | **Free forever plan** capped at **2 download threads** per file and excludes scheduling, smart speed controls, and in-app torrent search |
+| **[SnapDownloader](https://snapdownloader.com/)** | Desktop media extractor for Windows and macOS supporting 900+ sites with 8K resolution support and bulk downloading. | **~$1M – $3M** est. annual revenue | **$7.99/month** subscription; **$29.99/year**; or **$39.99** lifetime license (1 PC) | **48-hour free trial** with unlimited access to all features (no permanent free tier after 48h) |
+| **[Free Download Manager (FDM)](https://www.freedownloadmanager.org/)** | Clean cross-platform download manager and BitTorrent client developed by SoftDeluxe supporting modern web browsers. | **~$1M – $2M** est. annual revenue (SoftDeluxe) | **$0.00** (100% freeware supported via donations & optional partnerships) | **Free forever plan** with zero download caps, unlimited bandwidth, and full BitTorrent support |
+| **[FlashGet](https://www.flashget.com/)** | Classic multi-server hyper-threading download manager operated by Hongkong FlashGet Network Technology Co. | **~$1M** est. annual revenue | **$0.00** (freeware client supported by promotional partner utilities) | **Free forever plan** with full acceleration features and unlimited concurrent tasks |
+| **[Ninja Download Manager](https://ninjadownloadmanager.com/)** | Modern media download accelerator with sequential file preview and integrated clipboard monitors. | **<$1M** est. annual revenue | **$19.00** lifetime license (1 PC); **$29.00** for 3 PCs | **Free forever plan** limited to standard single-connection speeds (multi-part acceleration and video ripping require Pro license) |
+
+---
+
+## Open-Source GitHub Projects
+
+Top open-source media downloaders, CLI tools, web interfaces, and self-hosted archiving servers. Sorted in descending order by GitHub stargazers count.
+
+| Project | Stars | Language | Primary Focus | Key Features |
+| :--- | :--- | :--- | :--- | :--- |
+| **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** | [![GitHub Stars](https://img.shields.io/github/stars/yt-dlp/yt-dlp?style=social&color=white)](https://github.com/yt-dlp/yt-dlp/stargazers) | Python | Universal CLI Video Extractor | De facto standard for video downloading; actively maintained fork of youtube-dl with support for 1,000+ sites, SponsorBlock integration, format sorting, and subtitle extraction. |
+| **[youtube-dl](https://github.com/ytdl-org/youtube-dl)** | [![GitHub Stars](https://img.shields.io/github/stars/ytdl-org/youtube-dl?style=social&color=white)](https://github.com/ytdl-org/youtube-dl/stargazers) | Python | Universal CLI Video Extractor | The original CLI video extractor that established the ecosystem; largely in maintenance mode with slower extractor updates compared to yt-dlp. |
+| **[Motrix](https://github.com/agalwood/Motrix)** | [![GitHub Stars](https://img.shields.io/github/stars/agalwood/Motrix?style=social&color=white)](https://github.com/agalwood/Motrix/stargazers) | JavaScript / Electron | Full-Featured Desktop GUI | Beautiful GUI download manager powered by aria2; supports HTTP, FTP, BitTorrent, and Magnet links with up to 64 concurrent threads. |
+| **[you-get](https://github.com/soimort/you-get)** | [![GitHub Stars](https://img.shields.io/github/stars/soimort/you-get?style=social&color=white)](https://github.com/soimort/you-get/stargazers) | Python | Lightweight Video & Media CLI | Fast, zero-configuration command-line downloader with extensive support for YouTube, Bilibili, Youku, and international streaming portals. |
+| **[Cobalt](https://github.com/imputnet/cobalt)** | [![GitHub Stars](https://img.shields.io/github/stars/imputnet/cobalt?style=social&color=white)](https://github.com/imputnet/cobalt/stargazers) | Svelte / TypeScript | Privacy-Friendly Web UI & API | Modern web application and self-hostable backend service for downloading social media videos with zero tracking, zero ads, and instant conversion. |
+| **[aria2](https://github.com/aria2/aria2)** | [![GitHub Stars](https://img.shields.io/github/stars/aria2/aria2?style=social&color=white)](https://github.com/aria2/aria2/stargazers) | C++ | Multi-Protocol Download Engine | Ultra-fast CLI utility with multi-source, multi-protocol chunking (HTTP/HTTPS, FTP, SFTP, BitTorrent, Metalink); serves as the underlying engine for dozens of GUIs. |
+| **[lux](https://github.com/iawia002/lux)** | [![GitHub Stars](https://img.shields.io/github/stars/iawia002/lux?style=social&color=white)](https://github.com/iawia002/lux/stargazers) | Go | High-Speed CLI Downloader | Fast, lightweight media extractor written in Go (formerly `annie`); provides multi-thread downloading and playlist parsing with zero Python runtime dependency. |
+| **[spotDL](https://github.com/spotDL/spotify-downloader)** | [![GitHub Stars](https://img.shields.io/github/stars/spotDL/spotify-downloader?style=social&color=white)](https://github.com/spotDL/spotify-downloader/stargazers) | Python | Audio & Music Downloader | Downloads tracks, albums, and playlists from Spotify metadata matching with YouTube/YouTube Music audio streams; auto-embeds album art and ID3 tags. |
+| **[gallery-dl](https://github.com/mikf/gallery-dl)** | [![GitHub Stars](https://img.shields.io/github/stars/mikf/gallery-dl?style=social&color=white)](https://github.com/mikf/gallery-dl/stargazers) | Python | Image & Gallery Scraper | Specialized CLI scraper for batch downloading image galleries, manga, and artwork collections from DeviantArt, Danbooru, Pixiv, Reddit, and 200+ image boards. |
+| **[YoutubeDownloader](https://github.com/Tyrrrz/YoutubeDownloader)** | [![GitHub Stars](https://img.shields.io/github/stars/Tyrrrz/YoutubeDownloader?style=social&color=white)](https://github.com/Tyrrrz/YoutubeDownloader/stargazers) | C# / .NET | Windows Desktop GUI | Slick, performant WPF/Avalonia desktop front-end for downloading YouTube videos, audio tracks, and playlists with automatic subtitle and tag embedding. |
+| **[MeTube](https://github.com/alexta69/metube)** | [![GitHub Stars](https://img.shields.io/github/stars/alexta69/metube?style=social&color=white)](https://github.com/alexta69/metube/stargazers) | Python / Node.js | Self-Hosted Web GUI | Web GUI wrapper for `yt-dlp` designed for home servers and Docker; includes playlist support, download folder selection, and mobile-friendly responsive UI. |
+| **[AriaNg](https://github.com/mayswind/AriaNg)** | [![GitHub Stars](https://img.shields.io/github/stars/mayswind/AriaNg?style=social&color=white)](https://github.com/mayswind/AriaNg/stargazers) | JavaScript | Web Frontend for aria2 | Modern pure-HTML/JS web frontend that connects to an `aria2` RPC daemon, enabling remote download monitoring and task administration across servers. |
+| **[TubeArchivist](https://github.com/tubearchivist/tubearchivist)** | [![GitHub Stars](https://img.shields.io/github/stars/tubearchivist/tubearchivist?style=social&color=white)](https://github.com/tubearchivist/tubearchivist/stargazers) | Python | Self-Hosted YouTube Media Server | Complete self-hosted YouTube archiving server; indexes channels, tracks subscriptions, downloads metadata, and provides full-text video transcript search via Elasticsearch. |
+| **[XDM (Xtreme Download Manager)](https://github.com/subhra74/xdm)** | [![GitHub Stars](https://img.shields.io/github/stars/subhra74/xdm?style=social&color=white)](https://github.com/subhra74/xdm/stargazers) | Java / C# | Cross-Platform IDM Alternative | Open-source alternative to Internet Download Manager; increases speeds up to 500%, grabs streaming videos from web browsers, and resumes broken downloads. |
+| **[Persepolis Download Manager](https://github.com/persepolisdm/persepolis)** | [![GitHub Stars](https://img.shields.io/github/stars/persepolisdm/persepolis?style=social&color=white)](https://github.com/persepolisdm/persepolis/stargazers) | Python / Qt | Desktop GUI for aria2 | Multi-segment GUI download manager written in Python and PyQt; wraps `aria2` into a traditional desktop manager with queue scheduling and browser add-ons. |
+| **[media-downloader](https://github.com/mhogomchungu/media-downloader)** | [![GitHub Stars](https://img.shields.io/github/stars/mhogomchungu/media-downloader?style=social&color=white)](https://github.com/mhogomchungu/media-downloader/stargazers) | C++ / Qt | Multi-Engine Desktop GUI | Qt-based desktop frontend that unifies `yt-dlp`, `gallery-dl`, `aria2c`, and `wget` under a single configurable GUI with batch processing. |
+| **[TubeSync](https://github.com/meeb/tubesync)** | [![GitHub Stars](https://img.shields.io/github/stars/meeb/tubesync?style=social&color=white)](https://github.com/meeb/tubesync/stargazers) | Python / Django | Automated Channel Syncing | Self-hosted web service that automates syncing entire YouTube channels or playlists to a local media library or NAS server. |
+| **[yt-dlp-gui](https://github.com/kannagi0303/yt-dlp-gui)** | [![GitHub Stars](https://img.shields.io/github/stars/kannagi0303/yt-dlp-gui?style=social&color=white)](https://github.com/kannagi0303/yt-dlp-gui/stargazers) | C# / .NET | Windows yt-dlp GUI | Clean and modern Windows graphical interface for `yt-dlp` with automatic dependency management (ffmpeg, yt-dlp updates) and preset profiles. |
+| **[Video Downloader](https://github.com/Unrud/video-downloader)** | [![GitHub Stars](https://img.shields.io/github/stars/Unrud/video-downloader?style=social&color=white)](https://github.com/Unrud/video-downloader/stargazers) | Python / GTK | Linux GNOME Desktop GUI | Elegant GTK4/Libadwaita media extractor for Linux and Flatpak; wraps `yt-dlp` with native system aesthetics, audio extraction, and password-protected stream support. |
+| **[DownThemAll!](https://github.com/downthemall/downthemall)** | [![GitHub Stars](https://img.shields.io/github/stars/downthemall/downthemall?style=social&color=white)](https://github.com/downthemall/downthemall/stargazers) | JavaScript | Browser Extension | Legendary WebExtension for Firefox, Chrome, and Edge; provides batch link scraping, multi-segmented downloading, and customizable regex filters. |
+| **[yt-dlg](https://github.com/yt-dlg/yt-dlg)** | [![GitHub Stars](https://img.shields.io/github/stars/yt-dlg/yt-dlg?style=social&color=white)](https://github.com/yt-dlg/yt-dlg/stargazers) | Python / wxWidgets | Cross-Platform GUI | Classic cross-platform front-end (formerly `youtube-dl-gui`) updated to support `yt-dlp` alongside `youtube-dl`. |
+
+---
+
+## Feature Comparison Matrix
+
+| Feature / Capability | yt-dlp | Motrix | Cobalt | 4K Video Downloader+ | IDM | TubeArchivist |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **License Type** | Open Source (Unlicense) | Open Source (MIT) | Open Source (AGPL-3.0) | Proprietary Commercial | Proprietary Commercial | Open Source (GPL-3.0) |
+| **Interface** | CLI / API | Desktop GUI | Web UI & API | Desktop GUI | Desktop GUI / Extension | Web Server GUI |
+| **Multi-threaded Acceleration** | Yes (via aria2c) | Yes (up to 64 threads) | Yes (server-side) | Yes | Yes (Dynamic Segmentation) | Yes (via yt-dlp) |
+| **Video Extraction (1,000+ sites)** | Excellent | No (Direct links only) | High (Top 20 socials) | High (YouTube, TikTok, etc.) | Browser Sniffing | High (YouTube focused) |
+| **Torrent / Magnet Support** | No | Yes | No | No | No | No |
+| **Self-Hosted Docker Server** | Community images | No | Yes | No | No | Yes |
+
+---
+
+## How to Contribute
+
+1. Fork the repository.
+2. Add or update tool entries in `README.md`.
+3. Follow the established formatting guidelines:
+   - For **SaaS**: Ensure exact pricing (no vague "custom" or "usage-based" tiers), explicit free-tier/trial limitations (no "N/A"), and company valuation/revenue estimates.
+   - For **Open-Source**: Include the repo star badge formatted with `?style=social&color=white` linking to the stargazers page, and maintain descending star count order.
+4. Submit a pull request with a concise description of your additions.
+
+---
+
+## Disclaimer
+
+- This repository is a community-curated educational index and does not endorse unauthorized downloading of copyrighted intellectual property.
+- Users are solely responsible for complying with local copyright regulations and platform Terms of Service (ToS).
+- Legitimate use cases include archiving creative commons/public domain content, offline personal backup of your own uploads, and machine learning dataset curation with permission.
