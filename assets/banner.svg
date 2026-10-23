@@ -1,0 +1,212 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a11" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accent-cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.2" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="tech-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.25" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <!-- Filter Effects -->
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #ffffff;
+      letter-spacing: -1px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 17px;
+      fill: #94a3b8;
+      letter-spacing: 0.2px;
+    }
+    .badge-label {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #e2e8f0;
+    }
+
+    /* Ambient Pulsing Glow */
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.08); }
+    }
+    .pulsing-orb-1 {
+      transform-origin: 200px 100px;
+      animation: pulseGlow 8s ease-in-out infinite;
+    }
+    .pulsing-orb-2 {
+      transform-origin: 1050px 240px;
+      animation: pulseGlow 10s ease-in-out infinite reverse;
+    }
+
+    /* Floating Data Stream Particles */
+    @keyframes floatParticle1 {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      50% { transform: translateY(-35px) translateX(15px); opacity: 0.8; }
+      100% { transform: translateY(-70px) translateX(0px); opacity: 0; }
+    }
+    @keyframes floatParticle2 {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-40px) translateX(-20px); opacity: 0.9; }
+      100% { transform: translateY(-80px) translateX(-5px); opacity: 0; }
+    }
+    .particle-p1 { animation: floatParticle1 4s ease-in-out infinite; }
+    .particle-p2 { animation: floatParticle2 5.5s ease-in-out infinite; }
+    .particle-p3 { animation: floatParticle1 6s ease-in-out infinite 1.5s; }
+
+    /* Animated Download Arrows */
+    @keyframes streamDown {
+      0% { transform: translateY(-15px); opacity: 0; }
+      40% { opacity: 1; }
+      80% { transform: translateY(20px); opacity: 0.8; }
+      100% { transform: translateY(30px); opacity: 0; }
+    }
+    .stream-arrow-1 { animation: streamDown 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    .stream-arrow-2 { animation: streamDown 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite 0.75s; }
+    .stream-arrow-3 { animation: streamDown 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite 1.5s; }
+
+    /* Subtle Border Beam / Dash Effect */
+    @keyframes dashMove {
+      to { stroke-dashoffset: -1000; }
+    }
+    .border-glow-path {
+      stroke-dasharray: 80 200;
+      animation: dashMove 14s linear infinite;
+    }
+  </style>
+
+  <!-- Base Canvas Background -->
+  <rect width="1200" height="340" rx="18" fill="url(#bg-grad)" />
+
+  <!-- Digital Tech Grid -->
+  <rect width="1200" height="340" rx="18" fill="url(#tech-grid)" />
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <g>
+    <circle class="pulsing-orb-1" cx="200" cy="100" r="160" fill="#0284c7" opacity="0.35" filter="url(#soft-glow)" />
+    <circle class="pulsing-orb-2" cx="1020" cy="220" r="180" fill="#7c3aed" opacity="0.3" filter="url(#soft-glow)" />
+    <circle cx="600" cy="290" r="140" fill="#38bdf8" opacity="0.12" filter="url(#soft-glow)" />
+  </g>
+
+  <!-- Ambient Dynamic Floating Particles (Background Layer) -->
+  <g fill="#38bdf8">
+    <circle class="particle-p1" cx="160" cy="240" r="3" />
+    <circle class="particle-p2" cx="280" cy="270" r="2.5" />
+    <circle class="particle-p3" cx="950" cy="180" r="3.5" fill="#c084fc" />
+    <circle class="particle-p1" cx="1060" cy="260" r="2" fill="#818cf8" />
+    <circle class="particle-p2" cx="720" cy="60" r="3" />
+    <circle class="particle-p3" cx="420" cy="70" r="2.5" />
+  </g>
+
+  <!-- Stylized Download Pulse Graphics (Right Side) -->
+  <g transform="translate(980, 75)" opacity="0.85">
+    <!-- Stream Ring 1 -->
+    <circle cx="60" cy="70" r="65" fill="none" stroke="#334155" stroke-width="1.5" stroke-dasharray="4 8" />
+    <circle cx="60" cy="70" r="45" fill="#1e293b" fill-opacity="0.6" stroke="#475569" stroke-width="1.5" />
+    <!-- Animated Arrows in Downstream -->
+    <g class="stream-arrow-1">
+      <path d="M60 45 L60 85 M50 75 L60 85 L70 75" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g class="stream-arrow-2">
+      <path d="M60 30 L60 55 M53 48 L60 55 L67 48" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <g class="stream-arrow-3">
+      <path d="M60 15 L60 35 M55 30 L60 35 L65 30" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <!-- Base Tray -->
+    <path d="M42 98 L78 98" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Left Side Stylized Extraction Node Graphic -->
+  <g transform="translate(60, 65)" opacity="0.75">
+    <rect x="0" y="0" width="70" height="70" rx="16" fill="#1e293b" fill-opacity="0.6" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.5" />
+    <path d="M22 35 L48 35 M35 22 L48 35 L35 48" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="22" cy="35" r="4" fill="#818cf8" />
+  </g>
+
+  <!-- Foreground Rounded Container & Border Beam (Never hides text) -->
+  <rect x="1" y="1" width="1198" height="338" rx="17" fill="none" stroke="#1e293b" stroke-width="1.5" />
+  <rect class="border-glow-path" x="1" y="1" width="1198" height="338" rx="17" fill="none" stroke="url(#primary-glow)" stroke-width="2.5" />
+
+  <!-- FOREGROUND CONTENT: Header Category Pill -->
+  <g transform="translate(160, 52)">
+    <rect x="0" y="0" width="310" height="30" rx="15" fill="#1e293b" fill-opacity="0.8" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1" />
+    <circle cx="16" cy="15" r="4.5" fill="#38bdf8" />
+    <text x="32" y="20" class="badge-label" fill="#38bdf8">CURATED MEDIA ARCHIVING ECOSYSTEM</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Main Title & Gradient Accent -->
+  <g transform="translate(160, 132)">
+    <text class="title-text">Awesome Media Downloader</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Clear Informative Subtitle -->
+  <g transform="translate(160, 172)">
+    <text class="subtitle-text">High-performance video extractors, multi-stream download accelerators, and self-hosted archiving servers.</text>
+    <text class="subtitle-text" y="26">Explore comprehensive benchmarks, pricing tiers, and community open-source repositories.</text>
+  </g>
+
+  <!-- FOREGROUND CONTENT: Tech Stack & Feature Tag Pills -->
+  <g transform="translate(160, 246)">
+    <!-- Pill 1: Video Extraction -->
+    <g transform="translate(0, 0)">
+      <rect width="168" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="17" r="4" fill="#38bdf8" />
+      <text x="30" y="22" class="badge-label">yt-dlp &amp; Extractors</text>
+    </g>
+
+    <!-- Pill 2: Multi-Protocol -->
+    <g transform="translate(182, 0)">
+      <rect width="180" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="17" r="4" fill="#818cf8" />
+      <text x="30" y="22" class="badge-label">Multi-Thread &amp; aria2</text>
+    </g>
+
+    <!-- Pill 3: Self-Hosted -->
+    <g transform="translate(376, 0)">
+      <rect width="176" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="17" r="4" fill="#c084fc" />
+      <text x="30" y="22" class="badge-label">Self-Hosted Archiving</text>
+    </g>
+
+    <!-- Pill 4: SaaS & Desktop -->
+    <g transform="translate(566, 0)">
+      <rect width="154" height="34" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#334155" stroke-width="1" />
+      <circle cx="16" cy="17" r="4" fill="#34d399" />
+      <text x="30" y="22" class="badge-label">Commercial SaaS</text>
+    </g>
+  </g>
+</svg>

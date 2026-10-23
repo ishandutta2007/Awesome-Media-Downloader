@@ -1,33 +1,47 @@
-# Awesome Media Downloader [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# 📥 Awesome Media Downloader
 
-> A curated directory of the best **Media Downloaders**, **Video Extractors**, **Download Accelerators**, and **Self-Hosted Archiving Tools**. Discover leading commercial SaaS platforms and high-performance open-source repositories for batch downloading YouTube, TikTok, Instagram, Twitter/X, and web media.
+<p align="center">
+  <img src="./assets/banner.svg" alt="Awesome Media Downloader Banner" width="100%" />
+</p>
 
-Focused on fast video/audio extraction, multi-threaded batch downloading, streaming protocol parsing, and self-hosted media archiving.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Media-Downloader/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Media-Downloader?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Media-Downloader/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Media-Downloader?style=social" alt="GitHub Forks" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 A curated directory of the best **Media Downloaders**, **Video Extractors**, **Download Accelerators**, and **Self-Hosted Archiving Tools**. Discover leading commercial SaaS platforms and high-performance open-source repositories for batch downloading YouTube, TikTok, Instagram, Twitter/X, and web media.
+
+⚡ Focused on fast video/audio extraction, multi-threaded batch downloading, streaming protocol parsing, and self-hosted media archiving.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS & Commercial Platforms](#saas--commercial-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Feature Comparison Matrix](#feature-comparison-matrix)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [💼 SaaS & Commercial Platforms](#-saas--commercial-platforms)
+- [⭐ Open-Source GitHub Projects](#-open-source-github-projects)
+- [🧩 Feature Comparison Matrix](#-feature-comparison-matrix)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚖️ Disclaimer](#-disclaimer)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global download software market is valued at approximately **$45B – $48.3B** (with the dedicated online video downloader niche estimated at **~$2.1B** growing at **6.3% CAGR** toward $4B by 2035). The sector is **moderately fragmented**: consumer desktop and browser-based web extractors remain long-tail and competitive, while backend command-line extraction has consolidated into a near "winner-take-most" dynamic anchored heavily by open-source community standards like `yt-dlp`.
 
 ---
 
-## SaaS & Commercial Platforms
+## 💼 SaaS & Commercial Platforms
 
 A breakdown of leading commercial download software and media extractors. Sorted in descending order by estimated company size (annual revenue/valuation).
 
-| Product | Description | Est. Revenue / Company Size | Pricing | Free Tier Limit |
+| 🏷️ Product | 📝 Description | 🏢 Est. Revenue / Company Size | 💳 Pricing | 🎁 Free Tier Limit |
 | :--- | :--- | :--- | :--- | :--- |
 | **[BitComet](https://www.bitcomet.com/)** | High-performance multi-protocol BitTorrent, HTTP, and FTP download client developed by Comet Media Inc. | **~$10M – $20M** est. annual revenue | **$19.95** lifetime VIP license; optional $1.95/month VIP pass | **Free forever plan** with standard download speeds and non-intrusive banner ads (VIP unlocks ad-free and cloud acceleration) |
 | **[Internet Download Manager (IDM)](https://www.internetdownloadmanager.com/)** | Industry-standard Windows download accelerator by Tonec Inc. with dynamic file segmentation and deep browser integration. | **~$10M** est. annual revenue (Tonec Inc.) | **$11.95** 1-year license (1 PC); **$24.95** lifetime license (1 PC) | **30-day free trial** with full access to all acceleration and scheduling features (no permanent free plan) |
@@ -40,11 +54,11 @@ A breakdown of leading commercial download software and media extractors. Sorted
 
 ---
 
-## Open-Source GitHub Projects
+## ⭐ Open-Source GitHub Projects
 
 Top open-source media downloaders, CLI tools, web interfaces, and self-hosted archiving servers. Sorted in descending order by GitHub stargazers count.
 
-| Project | Stars | Language | Primary Focus | Key Features |
+| 📦 Project | 🌟 Stars | 💻 Language | 🎯 Primary Focus | ✨ Key Features |
 | :--- | :--- | :--- | :--- | :--- |
 | **[yt-dlp](https://github.com/yt-dlp/yt-dlp)** | [![GitHub Stars](https://img.shields.io/github/stars/yt-dlp/yt-dlp?style=social&color=white)](https://github.com/yt-dlp/yt-dlp/stargazers) | Python | Universal CLI Video Extractor | De facto standard for video downloading; actively maintained fork of youtube-dl with support for 1,000+ sites, SponsorBlock integration, format sorting, and subtitle extraction. |
 | **[youtube-dl](https://github.com/ytdl-org/youtube-dl)** | [![GitHub Stars](https://img.shields.io/github/stars/ytdl-org/youtube-dl?style=social&color=white)](https://github.com/ytdl-org/youtube-dl/stargazers) | Python | Universal CLI Video Extractor | The original CLI video extractor that established the ecosystem; largely in maintenance mode with slower extractor updates compared to yt-dlp. |
@@ -70,7 +84,7 @@ Top open-source media downloaders, CLI tools, web interfaces, and self-hosted ar
 
 ---
 
-## Feature Comparison Matrix
+## 🧩 Feature Comparison Matrix
 
 | Feature / Capability | yt-dlp | Motrix | Cobalt | 4K Video Downloader+ | IDM | TubeArchivist |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -83,19 +97,35 @@ Top open-source media downloaders, CLI tools, web interfaces, and self-hosted ar
 
 ---
 
-## How to Contribute
+## 🤝 How to Contribute
 
-1. Fork the repository.
-2. Add or update tool entries in `README.md`.
-3. Follow the established formatting guidelines:
+1. 🍴 Fork the repository.
+2. ✍️ Add or update tool entries in `README.md`.
+3. 📋 Follow the established formatting guidelines:
    - For **SaaS**: Ensure exact pricing (no vague "custom" or "usage-based" tiers), explicit free-tier/trial limitations (no "N/A"), and company valuation/revenue estimates.
    - For **Open-Source**: Include the repo star badge formatted with `?style=social&color=white` linking to the stargazers page, and maintain descending star count order.
-4. Submit a pull request with a concise description of your additions.
+4. 🚀 Submit a pull request with a concise description of your additions.
 
 ---
 
-## Disclaimer
+## 💖 Support
 
-- This repository is a community-curated educational index and does not endorse unauthorized downloading of copyrighted intellectual property.
-- Users are solely responsible for complying with local copyright regulations and platform Terms of Service (ToS).
-- Legitimate use cases include archiving creative commons/public domain content, offline personal backup of your own uploads, and machine learning dataset curation with permission.
+Thank you so much for exploring and using **Awesome Media Downloader**! If you find this curated resource helpful for your projects, media workflows, or research:
+
+- ⭐ **Star this repository** to show your appreciation and make it easier for others to discover!
+- 🍴 **Fork and contribute** to keep the list accurate and up-to-date with new extractors and tools.
+- 📢 **Share it** with friends, colleagues, and open-source communities.
+- ☕ If you'd like to support the ongoing maintenance and curation of this and other developer projects, consider buying a coffee via the **[GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007)**!
+
+---
+
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Media-Downloader&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Media-Downloader&type=date&legend=top-left)
+
+---
+
+## ⚖️ Disclaimer
+
+- 🛡️ This repository is a community-curated educational index and does not endorse unauthorized downloading of copyrighted intellectual property.
+- 📜 Users are solely responsible for complying with local copyright regulations and platform Terms of Service (ToS).
+- 💡 Legitimate use cases include archiving creative commons/public domain content, offline personal backup of your own uploads, and machine learning dataset curation with permission.
