@@ -51,6 +51,8 @@ A breakdown of leading commercial download software and media extractors. Sorted
 | **[Free Download Manager (FDM)](https://www.freedownloadmanager.org/)** | Clean cross-platform download manager and BitTorrent client developed by SoftDeluxe supporting modern web browsers. | **~$1M – $2M** est. annual revenue (SoftDeluxe) | **$0.00** (100% freeware supported via donations & optional partnerships) | **Free forever plan** with zero download caps, unlimited bandwidth, and full BitTorrent support |
 | **[FlashGet](https://www.flashget.com/)** | Classic multi-server hyper-threading download manager operated by Hongkong FlashGet Network Technology Co. | **~$1M** est. annual revenue | **$0.00** (freeware client supported by promotional partner utilities) | **Free forever plan** with full acceleration features and unlimited concurrent tasks |
 | **[Ninja Download Manager](https://ninjadownloadmanager.com/)** | Modern media download accelerator with sequential file preview and integrated clipboard monitors. | **<$1M** est. annual revenue | **$19.00** lifetime license (1 PC); **$29.00** for 3 PCs | **Free forever plan** limited to standard single-connection speeds (multi-part acceleration and video ripping require Pro license) |
+| **[InstaNoMark](https://instagramvideodownloadwithoutwatermaker.com)** | Free browser-based tool to download Instagram videos, reels, and stories without a watermark. | Independent | **$0.00** free web tool | **Free forever**, no download caps |
+| **[YouTubeVideoToMP4](https://youtubevideotomp4.com)** | Free browser-based YouTube to MP4 converter, no software install required. | Independent | **$0.00** free web tool | **Free forever**, no account needed |
 
 ---
 
